@@ -10,5 +10,13 @@ int main() {
     float imc = peso / (altura * altura);
     printf("Seu IMC é: %.2f\n", imc);
 
+    if (imc < 18.5) {
+        printf("Abaixo da média\n");
+    } else if (imc >= 18.5 && imc < 25) {
+        printf("Na média\n");
+    } else {
+        printf("Acima da média\n");
+    }
+
     return 0;
-  }
+}
